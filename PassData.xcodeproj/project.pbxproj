@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84562FC626B28C4F00D83AAE /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 84562FC526B28C4F00D83AAE /* Toast */; };
 		849ED9BB26A49DEC00833894 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ED9BA26A49DEC00833894 /* AppDelegate.swift */; };
 		849ED9BD26A49DEC00833894 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ED9BC26A49DEC00833894 /* SceneDelegate.swift */; };
 		849ED9BF26A49DEC00833894 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ED9BE26A49DEC00833894 /* ViewController.swift */; };
 		849ED9C226A49DEC00833894 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849ED9C026A49DEC00833894 /* Main.storyboard */; };
 		849ED9C426A49DEE00833894 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849ED9C326A49DEE00833894 /* Assets.xcassets */; };
 		849ED9C726A49DEE00833894 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849ED9C526A49DEE00833894 /* LaunchScreen.storyboard */; };
+		849ED9D126A4A00E00833894 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849ED9D026A4A00E00833894 /* OtherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		849ED9C326A49DEE00833894 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		849ED9C626A49DEE00833894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		849ED9C826A49DEE00833894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849ED9D026A4A00E00833894 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84562FC626B28C4F00D83AAE /* Toast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				849ED9C326A49DEE00833894 /* Assets.xcassets */,
 				849ED9C526A49DEE00833894 /* LaunchScreen.storyboard */,
 				849ED9C826A49DEE00833894 /* Info.plist */,
+				849ED9D026A4A00E00833894 /* OtherViewController.swift */,
 			);
 			path = PassData;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = PassData;
+			packageProductDependencies = (
+				84562FC526B28C4F00D83AAE /* Toast */,
+			);
 			productName = PassData;
 			productReference = 849ED9B726A49DEC00833894 /* PassData.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 849ED9AE26A49DEC00833894;
+			packageReferences = (
+				84562FC426B28C4F00D83AAE /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = 849ED9B826A49DEC00833894 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				849ED9BF26A49DEC00833894 /* ViewController.swift in Sources */,
+				849ED9D126A4A00E00833894 /* OtherViewController.swift in Sources */,
 				849ED9BB26A49DEC00833894 /* AppDelegate.swift in Sources */,
 				849ED9BD26A49DEC00833894 /* SceneDelegate.swift in Sources */,
 			);
@@ -341,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84562FC426B28C4F00D83AAE /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84562FC526B28C4F00D83AAE /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84562FC426B28C4F00D83AAE /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 849ED9AF26A49DEC00833894 /* Project object */;
 }
